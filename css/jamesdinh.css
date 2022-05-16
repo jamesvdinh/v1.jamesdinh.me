@@ -38,7 +38,7 @@ nav ul {
 
 nav li {
     display: inline-block;
-    line-height: 50px;
+    line-height: 60px;
     margin: 0 7px;
 }
 
@@ -60,7 +60,7 @@ nav img {
     font-size: 30px;
     color: white;
     float: right;
-    line-height: 50px;
+    line-height: 60px;
     margin-right: 20px;
     cursor: pointer;
     display: none;
@@ -70,7 +70,7 @@ nav img {
     display: inline-block;
     color: white;
     font-size: 25px;
-    padding: 10px 10px 10px 10px;
+    padding: 15px 10px 10px 10px;
     position: fixed;
 }
 
@@ -247,7 +247,7 @@ article img {
     text-align: left;
 }
 
-.coursework-header {
+.description-header {
     color: #76C6C6;
 }
 
