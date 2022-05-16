@@ -119,7 +119,7 @@ header {
 }
 
 .entrance-background {
-    background-image: url('Tokyo-Winter.jpg');
+    background-image: url('../img/tokyo-winter.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
@@ -245,6 +245,10 @@ article img {
 .article-description {
     padding-left: 20px;
     text-align: left;
+}
+
+.description-header {
+    color: #76C6C6;
 }
 
 #Gav-Summer-Internship {
