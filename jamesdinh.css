@@ -189,7 +189,7 @@ section {
 
 .topic-container {
     width: auto;
-    padding: 10px 20px 0px 20px;
+    padding: 20px 20px 0px 20px;
     align-content: stretch;
     display: grid;
     flex-flow: column nowrap;
