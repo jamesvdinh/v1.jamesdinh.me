@@ -11,7 +11,7 @@ html {
 }
 
 nav {
-    background: #26282c;
+    background: rgb(31, 33, 35);;
     height: auto;
     width: 100%;
     overflow: hidden;
@@ -292,7 +292,7 @@ article img {
 footer {
     width: auto;
     height: 100px;
-    background-color:#26282c;
+    background-color: rgb(31, 33, 35);;
     justify-content: center;
     align-items: center;
     text-align: center;
