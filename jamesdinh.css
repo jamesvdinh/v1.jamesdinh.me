@@ -1,0 +1,297 @@
+/*
+main css file
+*/
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #26282c;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    position: fixed;
+    z-index: 100;
+}
+
+/* wildcard for all objects inside nav */
+nav * {
+    padding: 0;
+    margin: 1px 1px;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+nav ul {
+    float: right;
+    margin-right: 20px;
+}
+
+nav li {
+    display: inline-block;
+    line-height: 50px;
+    margin: 0 7px;
+}
+
+nav a {
+    color:rgb(136, 180, 231);
+    font-size: 18px;
+}
+
+nav a.active,a:hover {
+    color: rgb(111, 129, 138);
+    transition: .5s;
+}
+
+nav img {
+    filter: drop-shadow(0 0 0.25rem rgb(20, 130, 220));
+}
+
+.checkbtn {
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 50px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+}
+
+#title {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    padding: 10px 10px 10px 10px;
+    position: fixed;
+}
+
+#check {
+    display: none;
+}
+@media (max-width: 700px) {
+    .checkbtn {
+        display: block;
+    }
+    .topic-container {
+        grid-template-columns: 1fr;
+    }
+    nav ul {
+        position: fixed;
+        width: 100%;
+        height: 30vh;
+        margin-top: 50px;
+        background: #1e2227;
+        top: -100%;
+        text-align: center;
+    }
+    nav ul li {
+        display: block;
+        margin: 20px 0;
+        line-height: 30px;
+    }
+    #check:checked ~ul {
+        top: 0;
+    }
+    .checkbtn {
+        display: inline-block;
+    }
+    
+}
+@media (max-width: 270px) {
+    #title {
+        display: none;
+    }
+}
+
+header {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.entrance-background {
+    background-image: url('Tokyo-Winter.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+#entrance {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    position: relative;
+}
+
+#profile {
+    margin-bottom: 0px;
+    width: 100%;
+    min-width: 140px;
+    max-width: 190px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.75rem rgb(20, 130, 220));
+}
+
+#entrance-title {
+    font-size: 45px;
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
+}
+
+#entrance-line {
+    width: 210px;
+    margin: 5px 0 0 0;
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
+}
+
+#entrance-subtitle {
+    filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
+}
+
+main {
+    width: 100%;
+    padding: 10px 0 10px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    margin: auto;
+    display: grid;
+    padding-bottom: 30px;
+}
+
+section {
+    width: auto;
+    padding: 70px 0px 0 0px;
+    text-align: center;
+    align-items: center;
+    max-width: 1500px;
+}
+
+.topic {
+    width: auto;
+    font-size: 35px;
+    padding: 0 20px 0 20px;
+}
+
+.topic-container {
+    width: auto;
+    padding: 10px 20px 0px 20px;
+    align-content: stretch;
+    display: grid;
+    flex-flow: column nowrap;
+    grid-template-columns: 1fr 1fr;
+}
+
+.topic-box {
+    height: auto;
+    padding: 0px 50px 50px 50px;
+    display: block;
+}
+
+.article-img {
+    width: auto;
+    height: auto;
+}
+
+.article-header {
+    display: flex;
+    align-content: stretch;
+    padding-bottom: 15px;
+}
+
+article img {
+    min-width: 50px;
+    max-width: 100px;
+    border-radius: 50%;
+    filter: drop-shadow(0 0 0.5rem rgb(175, 186, 194));
+}
+
+.article-title-box {
+    text-align: left;
+    width: auto;
+    display: block;
+    margin-left: 15px;
+}
+
+.article-title {
+    font-size: 25px;
+    padding-bottom: 5px;
+}
+
+.article-subtitle {
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+
+.article-date {
+    font-size: 15px;
+    color:rgb(129, 129, 129)
+}
+
+.article-description {
+    padding-left: 20px;
+    text-align: left;
+}
+
+#Gav-Summer-Internship {
+    filter: drop-shadow(0 0 0.25rem rgb(0, 47, 202));
+}
+
+#Coding-For-Covid {
+    filter: drop-shadow(0 0 0.25rem rgb(255, 4, 4));
+}
+
+#IvyHacks {
+    filter: drop-shadow(0 0 0.25rem rgba(2, 139, 43, 0.596));
+}
+
+#DeltaX {
+    filter: drop-shadow(0 0 0.25rem rgb(3, 50, 82));
+}
+
+#STHacks {
+    filter: drop-shadow(0 0 0.25rem rgb(37, 3, 82));
+}
+
+#GilroyHacks {
+    filter: drop-shadow(0 0 0.1rem rgb(124, 78, 36));
+}
+
+#MECA {
+    filter: drop-shadow(0 0 0.1rem rgb(36, 124, 102));
+}
+
+.line {
+    width: 100px;
+    margin: 10px auto;
+}
+
+.link {
+    color:rgb(108, 176, 231);
+    text-decoration: none;
+}
+
+footer {
+    width: auto;
+    height: 100px;
+    background-color:#26282c;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 10px 20px 20px 20px;
+    flex-flow: row wrap;
+}
