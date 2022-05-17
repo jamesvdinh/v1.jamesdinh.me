@@ -19,6 +19,7 @@ nav {
     top: 0;
     left: 0;
     position: fixed;
+    flex-wrap: nowrap;
     z-index: 100;
     box-shadow: 0 1px 6px 0 rgb(0 0 0 / 20%);
 }
@@ -226,7 +227,7 @@ section {
     padding-bottom: 15px;
 }
 
-article img {
+article.topic-box img {
     min-width: 50px;
     max-width: 100px;
     border-radius: 50%;
@@ -297,12 +298,39 @@ article img {
     padding: 20px 20px 0px 20px;
     align-content: stretch;
     display: grid;
-    flex-flow: column nowrap;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.skills-article {
+    background-color: #1e2227;
+    margin: 0 10px 0 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+    padding: 10px 5px 10px 5px;
+}
+
+.skills-topic-header {
+    display: grid;
+    width: auto;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
 }
 
 .line {
     width: 100px;
+    margin: 10px auto;
+}
+
+.cell-line {
+    width: 50%;
     margin: 10px auto;
 }
 
