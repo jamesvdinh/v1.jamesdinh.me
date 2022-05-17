@@ -8,6 +8,7 @@ html {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 nav {
@@ -91,7 +92,7 @@ nav a.active,a:hover {
     nav ul {
         position: fixed;
         width: 100%;
-        height: 30vh;
+        height: 280px;
         margin-top: 60px;
         background: #1e2227;
         top: -100%;
@@ -109,6 +110,14 @@ nav a.active,a:hover {
         display: inline-block;
     }
     
+}
+@media (max-width: 600px) {
+    .article-header, .article-title-box, .article-title, .article-subtitle, .article-date {
+        display: grid !important;
+        justify-content: center;
+        text-align: center;
+        margin-left: 0 !important;
+    }
 }
 @media (max-width: 400px) {
     #title {
@@ -281,6 +290,15 @@ article img {
 
 #MECA {
     filter: drop-shadow(0 0 0.1rem rgb(36, 124, 102));
+}
+
+#skills-container {
+    width: auto;
+    padding: 20px 20px 0px 20px;
+    align-content: stretch;
+    display: grid;
+    flex-flow: column nowrap;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .line {
