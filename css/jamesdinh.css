@@ -81,10 +81,16 @@ nav a.active,a:hover {
     display: none;
 }
 
+@media (max-width: 1100px) {
+    #card-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
 @media (max-width: 900px) {
     .topic-container {
         grid-template-columns: 1fr !important;
     }
+
 }
 @media (max-width: 700px) {
     .checkbtn {
@@ -110,7 +116,9 @@ nav a.active,a:hover {
     .checkbtn {
         display: inline-block;
     }
-    
+    #card-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+    }
 }
 @media (max-width: 600px) {
     .article-header, .article-title-box, .article-title, .article-subtitle, .article-date {
@@ -123,6 +131,9 @@ nav a.active,a:hover {
 @media (max-width: 400px) {
     #title {
         display: none;
+    }
+    .icon-gallery {
+        grid-template-columns: repeat(2, 1fr) !important;
     }
 }
 
@@ -265,6 +276,10 @@ article.topic-box img {
     color: #76C6C6;
 }
 
+.text-emphasis {
+    color:#7987da;
+}
+
 #Gav-Summer-Internship {
     filter: drop-shadow(0 0 0.25rem rgb(0, 47, 202));
 }
@@ -293,7 +308,7 @@ article.topic-box img {
     filter: drop-shadow(0 0 0.1rem rgb(36, 124, 102));
 }
 
-#skills-container {
+#card-container {
     width: auto;
     padding: 20px 20px 0px 20px;
     align-content: stretch;
@@ -301,27 +316,49 @@ article.topic-box img {
     grid-template-columns: repeat(3, 1fr);
 }
 
-.skills-article {
+.card {
     background-color: #1e2227;
-    margin: 0 10px 0 10px;
+    margin: 10px 10px 10px 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
-    padding: 10px 5px 10px 5px;
+    padding: 15px 5px 10px 5px;
 }
 
-.skills-topic-header {
+.card-topic-header {
     display: grid;
-    width: auto;
-    height: auto;
-    align-items: center;
-    justify-content: center;
+}
+
+.card-title {
+    font-size: 25px;
+}
+
+.card-description {
+    text-align: left;
+    padding: 10px 30px 10px 30px;
+}
+
+.icon-gallery {
+    display: grid;
+    padding: 10px 10px 5px 10px;
+    grid-template-columns: repeat(3, 1fr);
     text-align: center;
+    justify-content: center;
+}
+
+.gallery-icon {
+    padding-top: 10px;
 }
 
 .icon {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
+}
+
+.small-icon {
+    height: 40px;
+    width: auto;
 }
 
 .line {
@@ -329,7 +366,7 @@ article.topic-box img {
     margin: 10px auto;
 }
 
-.cell-line {
+.card-line {
     width: 50%;
     margin: 10px auto;
 }
