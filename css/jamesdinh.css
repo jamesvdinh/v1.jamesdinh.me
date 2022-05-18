@@ -325,14 +325,14 @@ article.topic-box img {
 }
 
 .topic-box:hover {
-    box-shadow: 10px 10px 10px rgb(0 0 0 / 20%);
+    box-shadow: 8px 8px 10px rgb(0 0 0 / 20%);
     margin: 28px 32px 32px 28px;
     border: 1px solid rgb(34, 34, 34);
     transition: .5s;
 }
 
 .card:hover {
-    box-shadow: 20px 20px 10px rgb(0 0 0 / 20%);
+    box-shadow: 13px 13px 10px rgb(0 0 0 / 20%);
     margin: 8px 12px 12px 8px;
     transition: .5s;
 }
