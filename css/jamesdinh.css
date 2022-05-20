@@ -157,7 +157,9 @@ header {
 }
 
 .entrance-background {
-    background-image: url('../img/tokyo-winter.jpg');
+    /*background-image: url('../img/tokyo-winter.jpg');*/
+    background-image: url(../img/mountains-background.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
