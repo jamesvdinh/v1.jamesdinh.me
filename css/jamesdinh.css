@@ -158,10 +158,11 @@ header {
 
 .entrance-background {
     /*background-image: url('../img/tokyo-winter.jpg');*/
-    background-image: url(../img/mountains-background.jpg);
+    background-image: url(../img/mountains-2.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     height: 100vh;
 }
 
@@ -199,6 +200,14 @@ header {
 
 #entrance-subtitle {
     filter: drop-shadow(0 0 1rem rgb(0, 0, 0));
+}
+
+#entrance-arrow {
+    max-height: 90px;
+    max-width: 35px;
+    position: absolute;
+    bottom: 5px;
+    float: bottom;
 }
 
 main {
