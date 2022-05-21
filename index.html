@@ -32,6 +32,7 @@
             font-family: "Glacial Indifference";
         }
     </style>
+    <!--For icons, go here: https://iconsvg.xyz/ -->
 </head>
 
 <body>
@@ -56,6 +57,18 @@
     <!--Front Page-->
     <header>
         <div class="entrance-background">
+            <!--JavaScript to change background when Day/Night-->
+            <script>
+                var date = new Date();
+                var hours = date.getHours();
+                if (hours > 18 || hours < 6) {
+                    document.write('<div class="entrance-background" style="background-image: url(../img/mountains.jpg);">')
+        
+                }
+                else {
+                    document.write('<div class="entrance-background" style="background-image: url(../img/mountains-2.jpg);">')
+                }
+            </script>
             <div id="entrance">
                 <img id="profile" src="img/profile.jpg" alt="Profile"/>
                 <h1 id="entrance-title">James V Dinh</h1>
