@@ -313,11 +313,11 @@ article.topic-box img {
 }
 
 .description-header {
-    color: #76C6C6;
+    color: #79c676;
 }
 
 .text-emphasis {
-    color:#e7e0a3;
+    text-decoration: underline;
 }
 
 #Gav-Summer-Internship {
@@ -427,6 +427,7 @@ article.topic-box img {
 .link {
     color:rgb(108, 176, 231);
     text-decoration: none;
+    cursor: pointer;
 }
 
 footer {
