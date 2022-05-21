@@ -157,7 +157,6 @@ header {
 }
 
 .entrance-background {
-    /*background-image: url('../img/tokyo-winter.jpg');*/
     background-image: url(../img/mountains-2.jpg);
     background-position: center;
     background-size: cover;
@@ -425,4 +424,18 @@ footer {
     text-align: center;
     padding: 10px 20px 20px 20px;
     flex-flow: row wrap;
+}
+
+footer ul {
+    float: top;
+}
+
+footer li {
+    display: inline-block;
+    margin: 0 7px;
+}
+
+footer a {
+    color:rgb(108, 176, 231);
+    font-size: 16px;
 }
