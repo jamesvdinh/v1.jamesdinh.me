@@ -180,7 +180,8 @@ header {
 
 #profile {
     margin-bottom: 0px;
-    width: 100%;
+    width: 190px;
+    height: 190px;
     min-width: 140px;
     max-width: 190px;
     border-radius: 50%;
