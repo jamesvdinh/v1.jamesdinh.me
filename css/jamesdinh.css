@@ -109,6 +109,7 @@ nav a.active,a:hover {
         background: #1e2227;
         top: -100%;
         text-align: center;
+        /*animation: growOut 300ms ease-in-out forwards*/
     }
     nav ul li {
         display: block;
@@ -149,6 +150,20 @@ nav a.active,a:hover {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 }
+
+/*
+@keyframes growOut {
+    0% {
+       transform: scale(0)
+   }
+   80% {
+       transform: scale(1.1)
+   }
+   100% {
+       transform: scale(1)
+   }
+}
+*/
 
 header {
     width: 100%;
