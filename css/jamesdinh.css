@@ -238,7 +238,7 @@ header {
     60% {
       transform: translateY(-3px);
     }
-  }
+}
 
 main {
     width: 100%;
@@ -388,7 +388,7 @@ article.topic-box img {
 
 .card {
     background-color: #1e2227;
-    margin: 10px 10px 10px 10px;
+    margin: 10px;
     border-radius: 5px;
     box-shadow: 5px 5px 10px rgb(0 0 0 / 20%);
     padding: 15px 5px 10px 5px;
@@ -450,7 +450,7 @@ article.topic-box img {
 footer {
     width: auto;
     height: 100px;
-    background-color: rgb(31, 33, 35);;
+    background-color: rgb(31, 33, 35);
     justify-content: center;
     align-items: center;
     text-align: center;
