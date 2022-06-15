@@ -39,7 +39,7 @@
     <!--Nav-->
     <nav>
         <a href="./">
-            <img id="logo" src="img/jd.png" loading="lazy" height="57" width="57" alt="logo"/>
+            <img id="logo" src="img/jd.png" loading="lazy" height="50" width="50" alt="logo"/>
             <div id="title">James Dinh</div>
         </a>
         <input type="checkbox" id="check">
@@ -47,11 +47,11 @@
             <p id="cat">ᓚᘏᗢ</p> <img src="img/bars.png" loading="lazy" height="20" width="25" alt="Bars"/>
         </label>
         <ul>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#competitions">Competitions</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#skills">Skills</a></li>
+            <li><a onclick="uncheck('check')" href="#education">Education</a></li>
+            <li><a onclick="uncheck('check')" href="#work">Work</a></li>
+            <li><a onclick="uncheck('check')" href="#competitions">Competitions</a></li>
+            <li><a onclick="uncheck('check')" href="#projects">Projects</a></li>
+            <li><a onclick="uncheck('check')" href="#skills">Skills</a></li>
         </ul>
     </nav>
     <!--Front Page-->
@@ -544,5 +544,6 @@
         © 2022 James Dinh <br>
         All Rights Reserved
     </footer>
+<script src="js/checkbox.js"></script>
 </body>
 </html>
