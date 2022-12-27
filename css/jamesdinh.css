@@ -53,7 +53,6 @@ nav a {
 nav a.active,a:hover {
     color: rgb(111, 129, 138);
     transition: .5s;
-    position: absolute;
 }
 
 #logo {
@@ -448,6 +447,10 @@ article.topic-box img {
     color:rgb(108, 176, 231);
     text-decoration: none;
     cursor: pointer;
+}
+
+.link:hover {
+    filter: brightness(0.9);
 }
 
 footer {
