@@ -75,12 +75,18 @@ nav a.active,a:hover {
     display: none;
 }
 
+.logo-container {
+    display: inline-flex;
+    align-items: center;
+}
+
 #title {
     display: inline-block;
     color: white;
     font-size: 25px;
-    padding: 14px 10px 10px 10px;
-    position: fixed;
+    font-weight: normal;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-left: 15px;
 }
 
 #check {
