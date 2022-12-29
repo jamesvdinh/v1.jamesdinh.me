@@ -15,7 +15,6 @@ nav {
     background: rgb(23, 24, 26);
     height: 60.5px;
     width: 100%;
-    overflow: hidden;
     top: 0;
     left: 0;
     position: fixed;
@@ -80,6 +79,29 @@ nav a.active,a:hover {
     align-items: center;
 }
 
+.logo-container::after {
+    content: 'Hi there! ^_^';
+    position: relative;
+    text-align: center;
+    align-items: center;
+    right: 124px;
+    top: 23px;
+    padding: 1px 7px;
+    opacity: 1;
+    background-color: #222429;
+    color: rgb(178, 108, 231);
+    font-size: 12px;
+    border-radius: 10px;
+    transition: opacity 300ms, transform 300ms;
+    transform: scale(0);
+    transform-origin: top;
+}
+
+.logo-container:hover::after,
+.logo-container:focus::after{
+  transform: scale(1);
+}
+
 #title {
     display: inline-block;
     color: white;
@@ -87,6 +109,10 @@ nav a.active,a:hover {
     font-weight: normal;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-left: 15px;
+}
+
+.tag-color {
+    color: darkgray;
 }
 
 #check {
