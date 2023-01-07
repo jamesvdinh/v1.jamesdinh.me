@@ -5,6 +5,18 @@ document.addEventListener( 'DOMContentLoaded', function() {
         focus  : 'center',
         autoWidth: true,
         autoplay: true,
+        mediaQuery: 'max',
+        breakpoints: {
+            950: {
+                destroy: true,
+            },
+        },
+        lazyLoad: true,
+        keyboard: true,
+        isNavigation: true,
+        pauseOnFocus: true,
+        speed: 2000,
+        interval: 7000,
     } );
     splide.mount();
 });

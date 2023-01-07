@@ -154,6 +154,11 @@ header {
   height: 75vh;
 }
 
+.splide__slide, .splide__slide:focus, .splide.is-focus-in, .splide__pagination__page:focus-visible {
+  border: none !important;
+  outline: none !important;
+}
+
 .slide-desc {
   position: relative;
   font-size: 18px;
@@ -163,6 +168,19 @@ header {
 
 li .splide__pagination__page.is-active {
   background: #2c2c2c;
+}
+
+@media (max-width: 950px) {
+  .slide-content {
+    margin: auto;
+    padding: 10px 5px 20px;
+  }
+  
+  .slide-img {
+    max-width: 800px;
+    width: 100%;
+    height: unset;
+  }
 }
 
 .about-parent {
