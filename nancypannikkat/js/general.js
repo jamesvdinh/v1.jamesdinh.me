@@ -19,4 +19,10 @@ document.addEventListener( 'DOMContentLoaded', function() {
         interval: 7000,
     } );
     splide.mount();
+    window.onload = function() {
+        uncheck('menu-btn');
+    };
+    function uncheck(id) {
+        document.getElementById(id).checked = false;
+    }
 });
