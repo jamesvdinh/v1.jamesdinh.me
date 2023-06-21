@@ -81,11 +81,11 @@ nav a.active,a:hover {
 
 .logo-container::after {
     content: 'Hi there! ^_^';
-    position: relative;
+    position: absolute;
     text-align: center;
     align-items: center;
-    right: 124px;
-    top: 23px;
+    left: 110px;
+    top: 43px;
     padding: 1px 7px;
     opacity: 1;
     background-color: #222429;
@@ -173,8 +173,11 @@ nav a.active,a:hover {
         grid-template-columns: repeat(2, 1fr) !important;
     }
 }
-@media (max-width: 270px) {
+@media (max-width: 300px) {
     #title {
+        display: none;
+    }
+    .logo-container::after {
         display: none;
     }
     .icon-gallery {
